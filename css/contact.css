@@ -1,0 +1,109 @@
+.contact-us {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.contact-form {
+    margin-top: 50px;
+    flex: 1;
+    padding: 0 50px;
+}
+
+.contact-form h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #0063b3;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+.contact-info {
+    margin-top: 50px;
+
+    flex: 1;
+    padding: 0 50px;
+}
+
+.company-details {
+    margin-bottom: 30px;
+}
+
+.company-details h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.company-details p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.company-details i {
+    margin-right: 10px;
+    color: #001335;
+}
+
+.map-container {
+    border: 1px solid black;
+    height: 300px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.map-container iframe{
+    height: 300px;
+}
+@media (max-width: 768px) {
+    .contact-us {
+        flex-direction: column;
+    }
+
+    .contact-form,
+    .contact-info {
+        flex: 1 0 100%;
+        padding: 0 20px;
+    }
+
+    .contact-info {
+        margin-top: 30px;
+    }
+}

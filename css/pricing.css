@@ -1,0 +1,299 @@
+.pricing {
+    padding: 80px 0;
+    background-color: #f5f7fa;
+}
+
+.pricing h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.pricing-card .features {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    min-height: 200px;
+}
+
+.pricing-card .features li {
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+.pricing-card .price {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 30px;
+}
+
+.pricing-card .price span {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.pricing-card .cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.pricing-card .cta-button:hover {
+    background-color: #2980b9;
+}
+
+/* Pro Card Styles */
+.pricing-card.pro {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: #ffffff;
+}
+
+.pricing-card.pro h3,
+.pricing-card.pro .features li,
+.pricing-card.pro .price {
+    color: #ffffff;
+}
+
+.pricing-card.pro .cta-button {
+    background-color: #e74c3c;
+    border: none;
+
+}
+
+.pricing-card.pro .cta-button:hover {
+    background-color: #c0392b;
+}
+
+.pro-badge {
+    
+    position: absolute;
+    top: 5px;
+    right: -35px;
+    background-color: #e74c3c;    
+    color: #ffffff;
+    padding: 5px 40px;
+    font-size: 0.9rem;
+    transform: rotate(45deg);
+}
+
+/* Premium Card Styles */
+.pricing-card.premium {
+    background: linear-gradient(135deg, #f39c12, #d35400);
+    color: #ffffff;
+    border: 2px solid #f1c40f;
+}
+
+.pricing-card.premium h3,
+.pricing-card.premium .features li,
+.pricing-card.premium .price {
+    color: #ffffff;
+}
+
+.pricing-card.premium .cta-button {
+    background-color: #f1c40f;
+    color: #34495e;
+    border: none;
+}
+
+.pricing-card.premium .cta-button:hover {
+    background-color: #f39c12;
+}
+
+.premium-badge {
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    background-color: #f1c40f;
+    color: #34495e;
+    padding: 5px 40px;
+    font-size: 0.9rem;
+    transform: rotate(45deg);
+}
+
+@media screen and (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 30px;
+    }
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.popup-content {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    margin: 5% auto;
+}
+
+.popup h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-section {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.form-section h3 {
+    color: #444;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 12px 12px 35px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .popup-content {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .form-group input,
+    .form-group select {
+        font-size: 14px;
+    }
+}
+
+/* Styles for different subscription types */
+.popup.basic { 
+    background-color: rgba(93, 182, 238, 0.312);
+
+ }
+.popup.pro { 
+    background-color: rgba(255, 217, 0, 0.243); 
+}
+.popup.premium { 
+    background-color: rgba(255, 68, 0, 0.301); 
+}
+
+.popup.pro .popup-content,
+.popup.premium .popup-content {
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.popup.premium .popup-content {
+    background: linear-gradient(45deg, #f3f3f3, #fff);
+}

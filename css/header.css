@@ -1,0 +1,119 @@
+:root {
+    --primary-color: #011a3b;
+    --secondary-color: #4285f4;
+    --accent-color: #34a853;
+    --text-color: #202124;
+    --light-bg: #f8f9fa;
+    --white: #ffffff;
+}
+/* Header and Navigation */
+header {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.active{
+    background-color: #4285f4;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.login-btn, .register-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn {
+    background-color: transparent;
+    border: 1px solid var(--white);
+}
+
+.register-btn {
+    background-color: var(--accent-color);
+}
+
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
